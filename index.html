@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" width="device-width, initial-scale=1.0" />
+    <title>Survey form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    
+    <div class="surveyform">
+      <h1 id="title">Panchayat 3 survey form</h1>
+    <p id="description">Thanks for taking time to review your favourite show</p>
+      <form id="survey-form" action="https://www.youtube.com/watch?v=Q49dBsGPIKw">
+        <fieldset>
+          <label id="name-label" for="name">Name<input id="name" placeholder="Enter your name" type=text required/></label>
+        
+          <label id="email-label" for="email">Email<input id="email" type="email" placeholder="Enter your email" required/></label>
+
+          <label id="number-label" for="number">Age<input id="number" type="number" name="age" min="13" max="120" placeholder="Age" required/></label>
+          <label id="season">Which season of panchayat you liked the most?
+              <select id="dropdown">
+                <option value="">(select one)</option>
+                <option id="1">Season 1</option>
+                <option id="2">Season 2</option>
+                <option id="3">Season 3</option>
+                <option id="4">Season 4</option>
+              </select>
+          </label>
+          <p value="rating">How much would you rate the season 4 of Panchayat?</p>
+          <label for="1"><input id="1" type="radio" value="1" name="rating" />1</label>
+          <label for="2"><input id="2" type="radio" value="2" name="rating" />2</label>
+          <label for="3"><input id="3" type="radio" value="3" name="rating" />3</label>
+          <label for="4"><input id="4" type="radio" value="4" name="rating" />4</label>
+          <label for="5"><input id="5" type="radio" value="5" name="rating" />5</label>
+
+          <label for="checkboxes">
+            <p id="para">Tell us your favourite characters from panchayat:</p>
+            <input id="checkboxes" type="checkbox" value="sachivji" />Sachiv Ji
+            <input id="checkboxes" type="checkbox" value="pradhanji" />Pradhan Ji
+
+            <input id="checkboxes" type="checkbox" value="Prahlad cha" />Prahlad cha<input id="checkboxes" type="checkbox" value="Banrakhas" />Banrakhas<input id="checkboxes" type="checkbox" value="Vinod" />Vinod
+            <input id="checkboxes" type="checkbox" value="Rinki" />Rinki
+            <input id="checkboxes" type="checkbox" value="vikas" /> Vikas
+
+            <input id="checkboxes" type="checkbox" value="ManjuDevi" />Manju Devi
+            <input id="checkboxes" type="checkbox" value="KrantiDevi" />Kranti Devi 
+          </label>
+          <label for="review">
+            <p name="review">Please write a short review about Panchayat 4 and tell us how can we improve in upcoming seasons:</p>
+            <textarea id="review" name="review" row="3" cols="39" placeholder="I liked this season..."></textarea>
+          </label>
+
+
+        </fieldset>
+        <input id="submit" type="submit" class="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
